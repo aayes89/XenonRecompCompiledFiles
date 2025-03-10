@@ -28,7 +28,7 @@ typedef struct _XXOVERLAPPED {
     be<uint32_t> dwExtendedError;
 } XXOVERLAPPED, *PXXOVERLAPPED;
 </code>
-and
+
 <h3>xdbf.h</h3>
 Patch block 129 to 138 to remove anonymity:
 <code>
@@ -39,7 +39,6 @@ union XDBFTitleID
         be<uint16_t> u16;
         char u8[0x02];
     }parts;
-
     be<uint32_t> u32;
 };
 </code>
