@@ -6,7 +6,7 @@
 
 # How to use
 * Open a linux shell or terminal
-* Clone repository with: <code>git clone https://github.com/aayes89/XenonRecompCompiledFiles.git</code>
+* Clone repository with: <code>git clone [https://github.com/aayes89/XenonRecompCompiledFiles.git](https://github.com/aayes89/XenonRecompCompiledFiles.git)</code>
 * Give executable permissions with: <code>chmod u+x XenonRecomp XenonAnalyse</code>
 * Enjoy
 
