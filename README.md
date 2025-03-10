@@ -44,4 +44,4 @@ union XDBFTitleID
 </code>
  
 # Thanks
-Base on <a href="https://github.com/hedge-dev/XenonRecomp.git">Edge-dev</a> project. 
+Base on <a href="https://github.com/hedge-dev/XenonRecomp">Edge-dev</a> project. 
