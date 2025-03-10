@@ -1,5 +1,8 @@
-# XenonRecompCompiledFiles
-XenonRecomp compiled files for Linux. Using Windows 10 X86_64 (WLS2 with Debian 12)
+# XenonRecomp Compiled Files for Linux
+* Using Windows 10 X86_64 (WLS2 with Debian 12)
+* GNU Make 4.3 Built for x86_64-pc-linux-gnu
+* cmake version 3.25.1
+  
 # Troubleshooting
 These compiled files were made possible after addressing some bugs in the implementation of some headers in the code.<br>
 Particularly in the <b>xbox.h</b> and <b>xdbf.h</b> files.
