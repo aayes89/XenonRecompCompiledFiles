@@ -10,6 +10,14 @@
 * Give executable permissions with: <code>chmod u+x XenonRecomp XenonAnalyse XenosRecomp xxhsum</code>
 * Enjoy
 
+# Usages:
+- XenonAnalyse:
+	-  XenonAnalyse [input XEX file path] [output jump table TOML file path]
+- XenonRecomp:
+	-  XenonRecomp [input TOML file path] [PPC context header file path]
+- XenosRecomp:
+	-  XenosRecomp [input path] [output path] [shader common header file path]
+
 # Troubleshooting
 These compiled files were made possible after addressing some bugs in the implementation of some headers in the code.<br>
 Particularly in the <b>xbox.h</b> and <b>xdbf.h</b> files.
