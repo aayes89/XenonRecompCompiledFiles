@@ -7,7 +7,7 @@
 # How to use
 * Open a linux shell or terminal
 * Clone repository with: <code>git clone [https://github.com/aayes89/XenonRecompCompiledFiles.git](https://github.com/aayes89/XenonRecompCompiledFiles.git)</code>
-* Give executable permissions with: <code>chmod u+x XenonRecomp XenonAnalyse xxhsum</code>
+* Give executable permissions with: <code>chmod u+x XenonRecomp XenonAnalyse XenosRecomp xxhsum</code>
 * Enjoy
 
 # Troubleshooting
@@ -52,6 +52,41 @@ union XDBFTitleID
     be<uint32_t> u32;
 };
 </code>
+        
+<h3>shader_recompiler.cpp</h3>
+Patch on structs:
+<code>
+    struct{
+        uint32_t code1;
+        uint32_t code2;
+        uint32_t code3;
+        uint32_t code4;
+    };
+    struct{
+        int8_t x;
+	    int8_t y;
+	    int8_t z;
+	    int8_t w;
+    };
+</code>
+to
+<code>
+    struct Code_flow{
+        uint32_t code1;
+        uint32_t code2;
+        uint32_t code3;
+        uint32_t code4;
+    };
+    Code_flow cf;
+    struct VarInt8{
+        int8_t x;
+	    int8_t y;
+	    int8_t z;
+	    int8_t w;
+    };
+    VarInt8 vint;
+</code>
+
  
 # Thanks
 Base on <a href="https://github.com/hedge-dev/XenonRecomp">Edge-dev</a> project. 
